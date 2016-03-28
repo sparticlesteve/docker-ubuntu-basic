@@ -1,0 +1,10 @@
+sudo: required
+
+services:
+  - docker
+
+install:
+  - docker build -t sfarrell/ubuntu-dev .
+
+after_success:
+  - echo "Success!"
