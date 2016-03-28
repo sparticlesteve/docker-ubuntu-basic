@@ -3,7 +3,7 @@ MAINTAINER Steve Farrell <Steven.Farrell@cern.ch>
 
 # Basic update and development tools
 RUN apt-get update -y && \
-    apt-get install -qq -y git dpkg-dev make cmake binutils \
+    apt-get install -qq -y git dpkg-dev make cmake binutils python \
                            software-properties-common && \
     add-apt-repository -y ppa:ubuntu-toolchain-r/test && apt-get update -y
 
