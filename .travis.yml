@@ -7,5 +7,9 @@ services:
 install:
   - docker build -t sfarrell/ubuntu-dev .
 
+script:
+  - docker run sfarrell/ubuntu-dev echo "good container"
+
 after_success:
-  - echo "Success!"
+  - docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
+  - docker push sfarrell/ubuntu-dev
