@@ -3,7 +3,7 @@ MAINTAINER Steve Farrell <Steven.Farrell@cern.ch>
 
 # Basic update and development tools
 RUN apt-get update -y && \
-    apt-get install -qq -y man git dpkg-dev make cmake \
+    apt-get install -qq -y man git subversion dpkg-dev make cmake \
                            wget binutils python ipython \
                            software-properties-common && \
     add-apt-repository -y ppa:ubuntu-toolchain-r/test && \
