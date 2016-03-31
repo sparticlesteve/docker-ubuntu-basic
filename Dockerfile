@@ -5,6 +5,7 @@ MAINTAINER Steve Farrell <Steven.Farrell@cern.ch>
 RUN apt-get update -y && \
     apt-get install -qq -y man git subversion dpkg-dev make cmake \
                            wget binutils python ipython krb5-user \
+                           doxygen \
                            software-properties-common && \
     add-apt-repository -y ppa:ubuntu-toolchain-r/test && \
     apt-get update -y
